@@ -8,12 +8,12 @@
 <body>
 	<div class="title">canvas 实现图片截图</div>
 	<div class="subtitle">/1.放大缩小图片；/2.遮罩区域支持拖拽图片移动; /3.裁剪区域可以移动; /4.生成base64图片数据</div>
-	<div class="box">
+	<div class="box" id="box">
 		<div class="inp">
 			<span class="addimg"><i class="text">添加图片</i><input type="file" id="loadimg"></span>
 			<span id="msg"> </span>
 		</div>
-		<div class="canvasbox">
+		<div class="canvasbox" id="canvasbox">
 			<canvas id="canvas1" width="350" height="350"><!--原始画布--></canvas>
 			<canvas id="canvas2" width="100" height="100"><!--裁剪后画布1--></canvas>
 			<canvas id="canvas3" width="150" height="150"><!--裁剪后画布2--></canvas>

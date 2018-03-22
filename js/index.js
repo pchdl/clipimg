@@ -1,5 +1,6 @@
 (function(){
-	var loadimg = document.getElementById('loadimg'), //添加图片按钮
+	var box = document.getElementById('box'),
+	    loadimg = document.getElementById('loadimg'), //添加图片按钮
 	    canvas1 = document.getElementById('canvas1'), //左边canvas，放入原图
 	    cxt1 = canvas1.getContext('2d'),
 	    canvas2 = document.getElementById('canvas2'), //右边小图裁剪后的canvas
@@ -18,6 +19,17 @@
 	//添加图片==
 	loadimg.addEventListener('change',function(){
 		change(this);
+	});
+	//拖拽图片进入canvas1中==
+	document.addEventListener("dragover", function(e){
+		e = e || event;
+    	e.preventDefault();//取消默认打开图片
+	});
+	document.addEventListener("drop", function(e) {
+		var e = e || event;
+		e.preventDefault();
+		var files = e.dataTransfer;
+		change(files);	
 	});
 	//获取截图数据并写入canvas2和canvas3中==
 	function getdata(){
