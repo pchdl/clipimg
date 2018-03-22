@@ -1,0 +1,112 @@
+*{	margin: 0;	padding: 0;}
+body{	background-color: #222;font-family: microsoft YaHei;}
+.title{height: 80px;line-height: 80px;font-size: 30px;text-align: center;color: #aaa;}
+.box{
+	width: 600px;
+	height: 500px;
+	margin: 0 auto;
+	padding: 25px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	background-color: #FFF;
+}
+.inp{padding-bottom:15px; display: flex;align-items: center;}
+.canvasbox{
+	position: relative;
+	width: 350px;
+	height: 350px;
+}
+#canvas1{display: block;}
+.pop{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	left: 100px;
+	top: 100px;
+}
+.pop:hover{
+	cursor: move;
+}
+#canvas2{
+	position:absolute;
+	display: block;
+	right: -180px;
+	top: 165px;
+	border: solid 1px #ccc;}
+#canvas3{
+	position:absolute;
+	display: block;
+	right: -180px;
+	top: 0;
+	border: solid 1px #ccc;}
+button{
+	margin-top: 15px;
+	padding: 5px 15px;
+	border: solid 1px #5faf3c;
+	border-radius: 3px;
+	background-color: #6ec448;
+	outline: none;
+	font-size: 15px;
+	font-weight: bold;
+	color: #26590f;
+}
+button:active{
+	box-shadow: 0 0 8px #448926 inset;
+}
+#msg{
+	display:inline-block;
+	height:30px;
+	line-height:30px;
+	color: red;
+	font-size: 13px;
+	margin-left: 50px;
+}
+.addimg{
+	position: relative;
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #6ec448;
+	border: solid 1px #5faf3c;
+	border-radius: 3px;
+}
+.addimg:active{
+	box-shadow: 0 0 8px #448926 inset;
+}
+#loadimg{
+	position: absolute;
+	display: block;
+	width: 80px;
+	height: 30px;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+.text{
+	position: absolute;
+	display: block;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	left: 0;
+	top: 0;
+	text-align: center;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	color: #26590f;
+}
+.opa{
+	position: absolute;
+	background-color: #000;
+	opacity: .5;
+}
+.cover-top{left: 0;top: 0;width: 100%;}
+.cover-left{left: 0;}
+.cover-right{right: 0;}
+.cover-bottom{left: 0;width: 100%;bottom: 0;}
+#biger{position: absolute;width: auto;height: auto;left: 360px;top: 300px;font-size: 18px;font-weight: normal;}
+#little{position: absolute;width: auto;height: auto;left: 410px;top: 300px;font-size: 18px;font-weight: normal;}
+#sendmsg{margin-left: 20px;font-size: 13px;color: green;}
+.subtitle{font-size: 13px;color: #999;text-align: center;padding-bottom: 15px; }
